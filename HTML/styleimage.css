@@ -1,0 +1,44 @@
+.container {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// min-height: 100vh;
+	min-height: 35rem;
+	background-image: linear-gradient(to bottom,  rgba(255,168,76,0.6) 0%,rgba(255,123,13,0.6) 100%), url(https://i.pinimg.com/736x/8b/ae/97/8bae97e0f661a107166a5dd29cb8ba13.jpg);
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem;
+}
+
+.ninja {
+	background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=1OLWn6OS&id=D1667A82EE5A5FF56D2EDF2622A27EB25A95F9A5&thid=OIP.1OLWn6OSy_LN3WxvxUpFaAAAAA&mediaurl=https%3a%2f%2fc.tenor.com%2fsSy-n1cQ18AAAAAM%2f%e0%a4%96%e0%a4%bc%e0%a5%81%e0%a4%b6%e0%a5%80-ninja-hattori.gif&exph=220&expw=220&q=ninga+hattori+gif&simid=608028487553336637&FORM=IRPRST&ck=046B664BE97ECDC939AB1C423F8A6689&selectedIndex=3);
+	background-size: auto 100%;
+	width: 352px;
+	height: 500px;
+	will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.ninja-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	will-change: transform;
+}
+
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -3600px 0;
+	}
+	
+}
